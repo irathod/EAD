@@ -1,0 +1,17 @@
+div {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  border:1px solid black;
+}
+div{
+  background-color: lightblue;
+}
+div{
+input[type="submit"] {
+  background-color: lightblue; 
+  color: rgb(230, 40, 40); 
+  border: 1px solid black; 
+}
+}
