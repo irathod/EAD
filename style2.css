@@ -1,0 +1,24 @@
+th {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #1e7e34;
+
+    color: #333; 
+}
+
+tbody tr td:first-child {
+    background-color: bisque;
+   
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(2n) {
+    background-color: #e6f7ff;
+}
+
+tr:nth-child(2n+1) {
+    background-color: #ffffff;
+}
