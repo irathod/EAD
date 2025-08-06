@@ -1,0 +1,10 @@
+legend{
+    color:rgb(20, 87, 7);
+}
+fieldset {
+    border: 10px solid #5d1a63;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 500px;
+    margin: auto;
+}

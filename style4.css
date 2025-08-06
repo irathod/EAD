@@ -1,0 +1,20 @@
+body {
+    background-color: lightseagreen; 
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    margin-bottom: 20px; 
+}
+
+p {
+    margin-bottom: 20px; 
+}
+a{
+    color:black;
+    transition: 1s ease;
+}
+a:hover{
+    color:red;
+    text-decoration: None;
+}
