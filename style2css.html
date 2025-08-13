@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid rgb(18, 23, 30);
+        }
+        th {
+            background-color: lightblue;
+        }
+        tr:nth-child(even) {
+            background-color: #f2b55a;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Time Table</h1>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>9:10 AM - 10:10 AM</th>
+            <th>10:10 AM - 11:10 AM</th>
+            <th>11:15 AM - 12:15 PM</th>
+            <th>12:15 PM - 1:00 PM</th>
+            <th>1:00 PM - 2:00 PM</th>
+            <th>2:00 PM - 3:00 PM</th>
+            <th>3:00 PM - 4:00 PM</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">CN LAB</td>
+            <td>FLAT</td>
+            <td rowspan="5">LUNCH</td>
+            <td>ML</td>
+            <td>PE2</td>
+            <td>SE</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="2">CT LAB</td>
+            <td>EAD</td>
+            <td>CN</td>
+            <td>LIBRARY</td>
+            <td>SPORTS</td>
+        </tr>
+        <tr>
+            <td>wednesday</td>
+            <td>PE2</td>
+            <td>EAD</td>
+            <td>ML LAB</td>
+            <td>ML LAB</td>
+            <td>SE</td>
+            <td>ML</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>FLAT</td>
+            <td>CN</td>
+            <td>EAD LAB</td>
+            <td>EAD LAB</td>
+            <td>ML</td>
+            <td>EAD</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>CN</td>
+            <td colspan="2">CC LAB</td>
+            <td>PE2</td>
+            <td>FLAT</td>
+            <td>CN</td>
+        </tr>
+    </table>
+</body>
+</html>
