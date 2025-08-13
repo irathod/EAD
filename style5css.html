@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f5f5f5;
+            padding-top: 30px;
+            text-align: center;
+        }
+        fieldset {
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f0e24b;
+        }
+        legend {
+            color: #4CAF50;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" style="text-align: center;">
+        <fieldset style="margin: auto; width: 400px; height: 300px;">
+            <legend>User Information</legend>
+            <h1>User Registration Form</h1>
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</body>
+</html>
