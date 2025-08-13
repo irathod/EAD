@@ -1,62 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<title>Chess Board</title>
-<style>
-  .chessboard {
-    display: grid;
-    grid-template-columns: repeat(8, 50px);
-    grid-template-rows: repeat(8, 50px);
-    width: 400px;
-    height: 400px;
-    border:2px solid black;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-  }
-  .chessboard div {
-    width: 50px;
-    height: 50px;
-    font-size: 32px;
-    text-align: center;
-    line-height: 50px;
-  }
-  .chessboard div:nth-child(odd) {
-    background-color: white;
-  }
-  .chessboard div:nth-child(even) {
-    background-color: rgb(177, 175, 175);
-  }
-  .chessboard div:nth-child(16n + 9),
-  .chessboard div:nth-child(16n + 11),
-  .chessboard div:nth-child(16n + 13),
-  .chessboard div:nth-child(16n + 15) {
-    background-color: rgb(184, 180, 180);
-  }
-  .chessboard div:nth-child(16n + 10),
-  .chessboard div:nth-child(16n + 12),
-  .chessboard div:nth-child(16n + 14),
-  .chessboard div:nth-child(16n + 16) {
-    background-color: white;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse; /* Remove double borders */
+            border: 3px solid #333;   /* Outer border of chessboard */
+        }
+
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 36px;
+            border: 1px solid #333;  /* Grid lines for each square */
+        }
+
+        .white {
+            background-color: #fafaf9;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+    </style>
 </head>
 <body>
-  <div class="chessboard">
-    <div>♜</div><div>♞</div><div>♝</div><div>♛</div><div>♚</div><div>♝</div><div>♞</div><div>♜</div>
-    <div>♟</div><div>♟</div><div>♟</div><div>♟</div><div>♟</div><div>♟</div><div>♟</div><div>♟</div>
-    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div>♙</div><div>♙</div><div>♙</div><div>♙</div><div>♙</div><div>♙</div><div>♙</div><div>♙</div>
-    <div>♖</div><div>♘</div><div>♗</div><div>♕</div><div>♔</div><div>♗</div><div>♘</div><div>♖</div>
-  </div>
+    <h1>Chess Board</h1>
+    <table>
+        <tr>
+            <td class="white">♖</td>
+            <td class="black">♘</td>
+            <td class="white">♗</td>
+            <td class="black">♕</td>
+            <td class="white">♔</td>
+            <td class="black">♗</td>
+            <td class="white">♘</td>
+            <td class="black">♖</td>
+        </tr>
+        <tr>
+            <td class="black">♙</td>
+            <td class="white">♙</td>
+            <td class="black">♙</td>
+            <td class="white">♙</td>
+            <td class="black">♙</td>
+            <td class="white">♙</td>
+            <td class="black">♙</td>
+            <td class="white">♙</td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+        </tr>
+        <tr>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+            <td class="black"></td>
+            <td class="white"></td>
+        </tr>
+        <tr>
+            <td class="white">♟</td>
+            <td class="black">♟</td>
+            <td class="white">♟</td>
+            <td class="black">♟</td>
+            <td class="white">♟</td>
+            <td class="black">♟</td>
+            <td class="white">♟</td>
+            <td class="black">♟</td>
+        </tr>
+        <tr>
+            <td class="black">♖</td>
+            <td class="white">♘</td>
+            <td class="black">♗</td>
+            <td class="white">♕</td>
+            <td class="black">♔</td>
+            <td class="white">♗</td>
+            <td class="black">♘</td>
+            <td class="white">♖</td>
+        </tr>
+    </table>
 </body>
 </html>
